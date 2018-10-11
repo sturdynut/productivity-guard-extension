@@ -1,0 +1,21 @@
+{
+  "name": "️️️Productivity Guard ⚔",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created to save you from being unproductive, now get back work!",
+  "homepage_url": "http://sturdynut.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
